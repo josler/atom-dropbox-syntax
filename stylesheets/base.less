@@ -1,0 +1,167 @@
+@import "syntax-variables";
+
+.editor-colors {
+  background-color: @background;
+  color: @normal;
+}
+
+.editor {
+  .invisible-character,
+  .indent-guide {
+    color: @verylightgrey;
+  }
+
+  .gutter {
+    background-color: @background;
+    color: @background_subtle;
+  }
+
+  .gutter .line-number {
+    opacity: 1;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @background_subtle;
+  }
+
+  .cursor {
+    border-color: @blue;
+    border-width: 3px;
+  }
+
+  .selection .region {
+    background-color: @lightblue;
+  }
+
+  .line-number.cursor-line-no-selection {
+    color: @blue;
+  }
+  
+  .wrap-guide {
+    background-color: @gray07;
+  }
+}
+
+.bracket-matcher {
+  background-color: @background_very_subtle;
+}
+
+.bracket {
+  color: @black;
+}
+
+.comment {
+  color: @lightgrey;
+  font-style: italic;
+}
+
+.class {
+  color: @purple;
+}
+
+
+.entity {
+  color: @darkgrey;
+  &.class {
+    color: @purple;
+  }
+  &.function {
+    color: @darkishgrey;
+  }
+}
+
+.keyword {
+  color: @orange;
+  &.operator {
+    color: @black;
+  }
+}
+
+.storage.type {
+  color: @purple_dark;
+}
+
+.constant {
+  color: @blue_dark;
+
+  &.numeric {
+    color: @cyan;
+  }
+  &.boolean {
+    color: @orange;
+  }
+  &.symbol {
+    color: @cyan;
+  }
+}
+
+.variable {
+  color: @darkgrey;
+  &.instance {
+    color: @cyan;
+  }
+  &.constant {
+    color: @purple;
+  }
+}
+
+.delimiter, .brace,
+.delimiter.period,
+.punctuation.definition {
+  color: @green_dark;
+  &.parameters {
+    color: @black;
+  }
+  &.constant {
+    color: @black;
+  }
+  &.variable {
+    color: @cyan;
+  }
+  &.comment {
+    color: @lightgrey;
+  }
+}
+
+.meta.embedded {
+  color: @darkgrey;
+}
+
+.punctuation.embedded {
+  color: @green_light;
+}
+
+.section {
+  border: 0px !important;
+  background: none !important;
+}
+
+.punctuation.separator,
+.punctuation.section {
+  color: @black;
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+}
+
+.invalid.illegal {
+  background-color: @red_dark;
+  color: @white;
+}
+
+.string {
+  color: @green_dark;
+
+  .constant.character.escape {
+  }
+
+  &.regexp {
+
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition {
+    }
+  }
+}
