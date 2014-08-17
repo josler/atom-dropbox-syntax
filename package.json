@@ -1,7 +1,7 @@
 {
   "name": "dropbox-syntax",
   "theme": "syntax",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Theme inspired by Dropbox API documentation code examples",
   "repository": "https://github.com/josler/atom-dropbox-syntax",
   "license": "MIT",
